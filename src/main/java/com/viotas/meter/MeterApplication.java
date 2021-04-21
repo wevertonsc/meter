@@ -47,7 +47,7 @@ public class MeterApplication {
 				float measure = (float) ((rand.nextInt((MAX - MIN) + 1) + MIN) * 0.01);
 
 				JSONObject jo = new JSONObject();
-				jo.put("meter_id", infoHost.getIpHost());
+				jo.put("meterId", infoHost.getIpHost());
 				jo.put("measure", String.valueOf(measure));
 				jo.put("timeMeasure", timeStamp);
 				String input = jo.toString();
